@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Tool</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Strength Evaluator</h2>
+      <div class="password-container">
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+        <i id="eye-icon" class="fas fa-eye"></i>
+      </div>
+      <div id="strengthBar">
+        <span id="strengthLevel"></span>
+      </div>
+      <p id="feedback" class="feedback"></p>
+      <h3>Generate a Strong Password</h3>
+      <button id="generateBtn">Generate Password</button>
+      <input type="text" id="generatedPassword" readonly />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
